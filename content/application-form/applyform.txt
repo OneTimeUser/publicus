@@ -1,0 +1,262 @@
+Title: Application Form
+
+----
+
+Fb-form-settings: true
+
+----
+
+Fb-form-id: application-form
+
+----
+
+Fb-form-class: 
+
+----
+
+Fb-usediv: true
+
+----
+
+Fb-builder:
+
+- 
+  display: |
+    Thank you for your interest in joining the PublicUs Team. We are very excited to begin the recruiting process. While each position has its own unique set of skills, expertise and requirements, there are some common traits we all share:
+    <br/>
+    - Creative and flexible
+    - A passion for teamwork
+    - A keen sense for fun!
+    - A strong commitment to providing an amazing customer experience
+    - A love for diversity and a genuine respect for individuality
+    - A natural drive to do better and constantly improve things
+    - A love for food and all things that go with it
+    <br/>
+    If any of this sounds interesting to you, please fill out our application below!
+    <br/>
+  _key: fb_displaytext
+  _uid: fb_displaytext_1580000880745_2278
+- 
+  field_name: applicant-name
+  field_class: half
+  req: 'true'
+  field_label: Name
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  pattern: ""
+  _key: fb_text
+  _uid: fb_text_1579313496374_798
+- 
+  field_name: applicant-email
+  field_class: half
+  req: 'true'
+  field_label: Email
+  placeholder: hello@publicus.lv
+  default: ""
+  min: null
+  max: null
+  pattern: ""
+  _key: fb_email
+  _uid: fb_email_1579313583366_1158
+- 
+  field_name: applicant-phone
+  field_class: half
+  req: 'true'
+  field_label: Contact Number
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  pattern: ""
+  _key: fb_tel
+  _uid: fb_tel_1579313624715_1510
+- 
+  field_name: position
+  field_class: half
+  req: 'true'
+  field_label: Position Desired
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  pattern: ""
+  _key: fb_text
+  _uid: fb_text_1579313660761_1862
+- 
+  field_name: fav-1
+  field_class: ""
+  req: 'true'
+  field_label: What is your favorite time of day?
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  pattern: ""
+  _key: fb_text
+  _uid: fb_text_1579313714537_2214
+- 
+  field_name: fav-2
+  field_class: ""
+  req: 'true'
+  field_label: What is your favorite meal of the day?
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  pattern: ""
+  _key: fb_text
+  _uid: fb_text_1579313755007_2566
+- 
+  field_name: fav-3
+  field_class: ""
+  req: 'true'
+  field_label: What is your favorite food?
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  pattern: ""
+  _key: fb_text
+  _uid: fb_text_1579313798960_2918
+- 
+  field_name: fav-4
+  field_class: ""
+  req: 'true'
+  field_label: Name your favorite place.
+  placeholder: restaurant, city, etc.
+  default: ""
+  min: null
+  max: null
+  pattern: ""
+  _key: fb_text
+  _uid: fb_text_1579313820682_3270
+- 
+  field_name: fav-5
+  field_class: ""
+  req: 'true'
+  field_label: >
+    What is the best thing about living in
+    Las Vegas?
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  rows: 3
+  _key: fb_textarea
+  _uid: fb_textarea_1579313918690_3976
+- 
+  field_name: fav-6
+  field_class: ""
+  req: 'true'
+  field_label: >
+    Why do you want to work in the
+    restaurant industry?
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  rows: 3
+  _key: fb_textarea
+  _uid: fb_textarea_1579313951947_4322
+- 
+  field_name: resume
+  field_class: ""
+  req: 'false'
+  field_label: Paste your resume here
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  rows: 5
+  _key: fb_textarea
+  _uid: fb_textarea_1579316056287_2485
+
+----
+
+Fb-submit-label: Submit
+
+----
+
+Fb-cancel-label: Reset
+
+----
+
+Fb-formbtns-class: 
+
+----
+
+Fb-captcha: false
+
+----
+
+Fb-captcha-theme: false
+
+----
+
+Fb-captcha-secretkey: 0xfbA1bFE8b66a86cBb9eB3cd6a59ad365E46B7484
+
+----
+
+Fb-captcha-sitekey: ebc2511b-d6d6-459b-9b7c-d0f7c702edbd
+
+----
+
+Fb-is-ajax: false
+
+----
+
+Fb-msg-position: false
+
+----
+
+Fb-success-page: 
+
+----
+
+Fb-error-page: 
+
+----
+
+Fb-success-msg: 
+
+----
+
+Fb-error-msg: 
+
+----
+
+Fb-send-email: true
+
+----
+
+Fb-email-recipient: info@publicuslv.com
+
+----
+
+Fb-email-sender-type: true
+
+----
+
+Fb-email-sender: 
+
+----
+
+Fb-email-sender-field: applicant-email
+
+----
+
+Fb-email-subject: New Application
+
+----
+
+Fb-save-submissions: false
+
+----
+
+Fb-key-field: 
+
+----
+
+Fb-received-submissions: 

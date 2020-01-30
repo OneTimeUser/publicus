@@ -1,0 +1,47 @@
+# The site blueprint must have a title, the title may be different from the file name
+# The `site.yml` blueprint defines the look of the start page (Dashboard) of the Panel.
+title: Site
+
+# The site blueprint usually provides easy access to all main pages of the site.
+# In this example blueprint, we also show subpages of the `photography` and `notes` pages.
+# More about the site blueprint: https://getkirby.com/docs/reference/panel/blueprints/site
+
+# The layout of this form has two columns:
+columns:
+ # need to figure out how to just output structured data (not editable) `
+  - width: 2/3
+    sections:
+      pages:
+        type: pages
+        create: false
+        templates:
+          - about
+          - home
+          - default
+          - foodmenu
+          - drinkmenu
+          - apply
+          - applyform
+          - contactform 
+#      food:
+#        headline: Daily Menu
+#        type: info
+#        text: "{{page.thispage}}"
+#           
+##      drink:
+##        headline: Drink Menu
+##        type: info
+###        parent: site.find("drink") 
+
+  # The second column has two sections, `notes` and `pages`
+  - width: 1/3
+    sections:
+      site-images:
+        headline: PublicUs Images
+        help: |
+          Images uploaded will be randomized across all sections.
+        type: files
+        max: 30
+        
+
+

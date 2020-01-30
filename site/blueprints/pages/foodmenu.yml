@@ -1,0 +1,37 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Food Menu
+icon: 🍕
+
+options:
+  delete: false
+  changeStatus: false
+
+fields:
+  brekkie:
+    extends: fields/item
+    label: BREKKIE
+
+  toasts:
+    extends: fields/item
+    label: TOASTS
+
+  salads:
+    extends: fields/item
+    label: SALADS
+
+  soups:
+    extends: fields/item
+    label: SOUPS
+    
+  bowls:
+    extends: fields/item
+    label: BOWLS
+    
+  sandwiches:
+    extends: fields/item
+    label: SANDWICHES
+    
+  sides:
+    extends: fields/item
+    label: SIDES
+

@@ -1,0 +1,43 @@
+Title: About
+
+----
+
+Text: 
+
+----
+
+Address:
+
+1126 Fremont Street
+Las Vegas, Nevada 89101
+
+----
+
+Email: info@publicuslv.com
+
+----
+
+Phone: (702) 331-5500
+
+----
+
+Social:
+
+- 
+  platform: Twitter
+  url: https://twitter.com/PublicUsLV
+- 
+  platform: Instagram
+  url: https://instagram.com/publicuslv
+- 
+  platform: Facebook
+  url: https://www.facebook.com/PublicUsLV/
+
+----
+
+Contact:
+
+Kirby Magazine Inc.
+Sesamestreet 1
+Gotham City
+USA

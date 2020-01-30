@@ -1,0 +1,533 @@
+Title: Food
+
+----
+
+Brekkie:
+
+- 
+  dish: 'Chimichurri NY Steak & Eggs'
+  description: >
+    8oz NY Steak, 2 Sunny Side Up Farm Eggs,
+    Crispy Red Bliss Potatoes, PublicUs
+    Sourdough Toast.
+  tags: gfo, nf, df
+  disclaimer: uc
+  addons: ""
+  price: "16"
+  unpublished: ""
+- 
+  dish: The Traditionalist
+  description: >
+    2 Farm Eggs, Bacon, Crispy Red Bliss
+    Potatoes, PublicUs Sourdough Toast.
+  tags: gfo, nf, df, vo
+  disclaimer: uc
+  addons: + Spam or Portuguese Sausage 2
+  price: "11"
+  unpublished: ""
+- 
+  dish: Garden Farm Benedict
+  description: >
+    2 Farm Poached Eggs, Roasted Veggies,
+    Crispy Red Bliss Potatoes, Super
+    Spinach, Heirloom Tomatoes, Brown Butter
+    Hollandaise, PublicUs Sourdough Toast.
+  tags: gfo, nf, dfo, v
+  disclaimer: uc
+  addons: + Smoked Salmon 3
+  price: "12"
+  unpublished: ""
+- 
+  dish: The Brekkie Sandwich
+  description: >
+    2 Farm Eggs, Bacon, Artisanal Cheese
+    Blend, Kosho Aioli, Potato Hawaiian
+    Sweet Bun.
+  tags: gfo, nf, dfo, vo
+  disclaimer: uc
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: Waffle For The People
+  description: >
+    Crispy Brussels Style Waffle with Pure
+    Maple Syrup.
+  tags: nfo, v
+  disclaimer: ""
+  addons: |
+    + Fresh Mixed Berries & Vanilla Cream 4
+    + Pecan Croquant, Apple Butter, Pomegranate Syrup 4
+    + Bacon or Portuguese Sausage 2
+  price: "9"
+  unpublished: ""
+- 
+  dish: The Brekkie Burrito
+  description: '3 Farm Egg Omelette, Cheddar Cheese, Chorizo (Beef or Soy), Crispy Red Bliss Potatoes, Vegan Refried Beans, Chipotle Pepper, Onions. Served With Créme FraÎche, Habanero Sauce, Pico De Gallo, Lime & Orange.'
+  tags: nf, dfo, vo, vvo
+  disclaimer: ""
+  addons: + Avocado 2
+  price: "11"
+  unpublished: ""
+- 
+  dish: Shakshuka
+  description: "Middle Easter Spiced Tomato Sauce, Halloumi Cheese, 2 Farm Eggs, Za'atar, Cilantro, Sesame Toast."
+  tags: gfo, nf, dfo, v, vo
+  disclaimer: uc
+  addons: + Avocado 2
+  price: "12"
+  unpublished: ""
+- 
+  dish: ' Corned Beef Scrapple'
+  description: >
+    Red Flint Polenta, Desert Bloom Braised
+    Greens, 2 Farm Eggs, Braised Mushrooms,
+    Local Hot Honey.
+  tags: gf, nf, df
+  disclaimer: uc
+  addons: ""
+  price: "14"
+  unpublished: ""
+- 
+  dish: Brioche French Toast
+  description: >
+    Pink Lady Apple Compote, Whipped Créme
+    Fraiche.
+  tags: nf, dfo, v
+  disclaimer: ""
+  addons: ""
+  price: "13"
+  unpublished: ""
+- 
+  dish: 'Biscuits & Gravy'
+  description: >
+    Buttermilk Biscuit, Country Sausage
+    Gravy, 2 Farm Eggs.
+  tags: nf
+  disclaimer: uc
+  addons: ""
+  price: "11"
+  unpublished: ""
+
+----
+
+Toasts:
+
+- 
+  dish: Smashed Avo Toast
+  description: >
+    Poached Farm Eggs, Guajillo Pepper
+    Spread, Organic Cherry Tomatoes,
+    PublicUs Sourdough Toast, Organic Mixed
+    Greens.
+  tags: gfo, nf, df, v, vvo
+  disclaimer: uc
+  addons: |
+    + Bacon or Portuguese Sausage 2
+    + Crispy Red Bliss Potatoes 2
+  price: "9.5"
+  unpublished: ""
+- 
+  dish: Fruit Toast
+  description: >
+    Mascarpone Créme Fraiche Spread, Pink
+    Lady Apple Compote, Pomegranate, Winter
+    Citrus Zest, Pecan Croquant.
+  tags: gfo, nfo, v
+  disclaimer: ""
+  addons: ""
+  price: "11"
+  unpublished: ""
+- 
+  dish: Smoked Salmon
+  description: >
+    Créme FraÎche, Radish, Local Micro
+    Greens.
+  tags: gfo, nf
+  disclaimer: ""
+  addons: ""
+  price: "11"
+  unpublished: ""
+
+----
+
+Salads:
+
+- 
+  dish: Winter Squash Salad
+  description: >
+    Local Winter Greens, Pomegranate,
+    Pumpkin Seed, Fried Onion, Maple Pumpkin
+    Dressing.
+  tags: gfo, nf, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: Chargrilled Winter Lettuce
+  description: >
+    Radicchio, Braised Greens, Fuyu
+    Persimmon Carpaccio, Confit Shallot,
+    Fried Chickpea, Pecan Balsamic.
+  tags: gf, nf, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: ' Green Apple & Beet Salad'
+  description: >
+    Ricotta, crème fraiche, chestnut, local
+    Herbs by Diane, baby greens, hazelnut
+    vin.
+  tags: gf, dfo, v, vvo
+  disclaimer: ""
+  addons: ""
+  price: "13"
+  unpublished: ""
+- 
+  dish: Mixed Greens Salad
+  description: >
+    Organic Mixed Greens, Radish, Tomato,
+    Pomegranate Syrup, White Balsamic
+    Vinaigrette.
+  tags: gf, nf, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "8"
+  unpublished: ""
+
+----
+
+Soups:
+
+- 
+  dish: Pozole
+  description: >
+    Pork Shoulder, Hominy, Tomato Coriander
+    Broth, Cilantro, Avocado, Tostadas.
+  tags: gf, nf, df
+  disclaimer: ""
+  addons: ""
+  price: 7 / 11
+  unpublished: ""
+- 
+  dish: Veggie Tofu Curry
+  description: >
+    Vegan Yellow Thai Curry, Seasonal
+    Vegetables, Tofu, Coconut Milk, White
+    Rice, Furikake, Sesame Toast.
+  tags: nf, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: Soup du Jour
+  description: Ask For Selection.
+  tags: ""
+  disclaimer: ""
+  addons: ""
+  price: 7 / 11
+  unpublished: ""
+
+----
+
+Bowls:
+
+- 
+  dish: ' Chargrilled & Braised Cauliflower '
+  description: >
+    Cauliflower Cashew Skordalia, Brown Rice
+    Chickpea Pilaf, Braised Fall Greens,
+    Chili-Citrus Vin.
+  tags: gf, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: Red Wine Braised Beef
+  description: >
+    Red Flint Polenta, Ricotta, Braised
+    Local Greens, Parsley Preserved Lemon
+    Gremolata.
+  tags: gf, nf
+  disclaimer: ""
+  addons: ""
+  price: "14"
+  unpublished: ""
+- 
+  dish: Mahalo Special
+  description: >
+    2 Farm Eggs, Spam, Portuguese Sausage,
+    White Rice, Furikake, Pickles and
+    Kimchi.
+  tags: gf, nf, df
+  disclaimer: uc
+  addons: ""
+  price: "13"
+  unpublished: ""
+- 
+  dish: Loco Moco
+  description: >
+    Dry Aged Prime Angus Patty, White Rice,
+    Farm Egg, Mac Salad, Brown Gravy.
+  tags: nf
+  disclaimer: uc
+  addons: ""
+  price: "14"
+  unpublished: ""
+- 
+  dish: Buttermilk Fried Chicken
+  description: >
+    White Rice, Farm Fried Egg, Kimchi,
+    Spicy Pickles, Spicy Bourbon Sauce.
+  tags: nf
+  disclaimer: uc
+  addons: ""
+  price: "14"
+  unpublished: ""
+
+----
+
+Sandwiches:
+
+- 
+  dish: Add Ons
+  description: ""
+  tags: ""
+  disclaimer: ""
+  addons: |
+    + Crispy Red Bliss Potatoes 2
+    + Avocado 2
+    + Bacon 2
+    + Portuguese Sausage 2
+  price: ""
+  unpublished: ""
+- 
+  dish: California Turkey
+  description: >
+    Roasted Turkey, Avocado Aioli, Swiss
+    Cheese, Butter Lettuce, Tomatoes, Red
+    Onions, PublicUs Sourdough.
+  tags: gfo, nf, dfo
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: Roasted Veggie Wrap
+  description: 'Roasted Squash & Peppers, Cashew Preserved Lemon Hummus, Pumpkin & Pomegranate Seeds, Greens, Crispy Onions, Spinach Wrap, Pumpkin Maple Dressing.'
+  tags: gfo, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: Jerk Chicken
+  description: >
+    Local Greens, Plaintains, Pepper Jam,
+    Potato Hawaiian Sweet Bun.
+  tags: ""
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: Grilled Steak
+  description: >
+    Blue Cheese Mousse, Pepper Jam, Crispy
+    Onions, Publicus Sourdough.
+  tags: gfo, nf, df
+  disclaimer: uc
+  addons: ""
+  price: "15"
+  unpublished: ""
+- 
+  dish: Fried Fish
+  description: >
+    Tenaya Creek Beer Battered Wild Opah,
+    Peppernata, Kosho Aioli, Pickle, Potato
+    Hawaiian Sweet Bun.
+  tags: gfo, nf, df
+  disclaimer: ""
+  addons: ""
+  price: "13"
+  unpublished: ""
+- 
+  dish: Braised Broccolini Panini
+  description: >
+    Braised Mushroom, Peppernata, Vegan
+    Bechamel, Confit Garlic, Publicus
+    Sourdough.
+  tags: gfo, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+- 
+  dish: PublicUs Burger
+  description: >
+    30 Day Dry Aged Prime Angus Beef,
+    Artisanal Cheese Blend, Thick Sliced
+    Vine Ripe Tomatoes, Red Onion, Butter
+    Lettuce, PublicUs Spread, Potato
+    Hawaiian Sweet Bun.
+  tags: gfo, nf, dfo
+  disclaimer: uc
+  addons: ""
+  price: "13"
+  unpublished: ""
+- 
+  dish: PublicUs Veggie Burger
+  description: >
+    Cashew Preserved Lemon Hummus, Braised
+    Greens, and Pumpkin Maple Dressing,
+    Crispy Onions or Traditional Burger
+    Style.
+  tags: gfo, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "12"
+  unpublished: ""
+
+----
+
+Sides:
+
+- 
+  dish: Fresh Fruit or Fresh Mixed Berries
+  description: ""
+  tags: ""
+  disclaimer: ""
+  addons: ""
+  price: "4.5"
+  unpublished: ""
+- 
+  dish: Steel-Cut Oats
+  description: 'Served with Seasonal Fresh Fruit & Nuts.'
+  tags: gf, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "7"
+  unpublished: ""
+- 
+  dish: Yogurt Bar
+  description: >
+    Greek-Style Yogurt, House Made Granola,
+    Topped with Fresh Mixed Berries.
+  tags: gf, v
+  disclaimer: ""
+  addons: + Pure Maple Syrup .5
+  price: "7.5"
+  unpublished: ""
+- 
+  dish: 'Toast & Jam'
+  description: 'Served With PublicUs Jam of the Day & Butter.'
+  tags: gfo, nf, v, vvo
+  disclaimer: ""
+  addons: ""
+  price: "4.5"
+  unpublished: ""
+- 
+  dish: Crispy Red Bliss Potatoes
+  description: 'Garlic, Citrus & Rosemary Salt.'
+  tags: gf, nf, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "7"
+  unpublished: ""
+- 
+  dish: Farm Fresh Eggs (1 or 2)
+  description: ""
+  tags: gf, nf, df, v
+  disclaimer: ""
+  addons: ""
+  price: 2 / 3.5
+  unpublished: ""
+- 
+  dish: >
+    Portuguese Sausage / Chicken Apple
+    Sausage / Turkey Bacon / Bacon / Spam
+  description: ""
+  tags: gf, nf, df
+  disclaimer: ""
+  addons: ""
+  price: "4.5"
+  unpublished: ""
+- 
+  dish: Grilled Salmon / Fried Wild Caught Opah
+  description: ""
+  tags: gf, nf, df
+  disclaimer: uc
+  addons: ""
+  price: "7"
+  unpublished: ""
+- 
+  dish: Grilled Jerk Chicken
+  description: ""
+  tags: gf, nf, df
+  disclaimer: ""
+  addons: ""
+  price: "4.5"
+  unpublished: ""
+- 
+  dish: Grilled Hanger Steak 6oz.
+  description: ""
+  tags: gf, nf, df
+  disclaimer: uc
+  addons: ""
+  price: "7"
+  unpublished: ""
+- 
+  dish: Grilled NY Steak 8oz.
+  description: ""
+  tags: gf, nf, df
+  disclaimer: uc
+  addons: ""
+  price: "9"
+  unpublished: ""
+- 
+  dish: Deconstruced Spam Musubi
+  description: Tare, White Rice, Nori, Furikake.
+  tags: nf, df
+  disclaimer: ""
+  addons: ""
+  price: "5.5"
+  unpublished: ""
+- 
+  dish: Seared Halloumi
+  description: >
+    Served With Parsley Preserved Lemon
+    Gremolata.
+  tags: gf, nf, v
+  disclaimer: ""
+  addons: ""
+  price: "6"
+  unpublished: ""
+- 
+  dish: Veggie Patty
+  description: ""
+  tags: gf, nf, df, vv
+  disclaimer: ""
+  addons: ""
+  price: "7"
+  unpublished: ""
+- 
+  dish: Scrappie Patty
+  description: Corned Beef, Potato, Spices.
+  tags: gf, nf, df
+  disclaimer: ""
+  addons: ""
+  price: "7"
+  unpublished: ""
+- 
+  dish: Hamburger Patty
+  description: 30 Day Dry Aged Prime Angus
+  tags: gf, nf, df
+  disclaimer: ""
+  addons: ""
+  price: "7"
+  unpublished: ""

@@ -1,0 +1,14 @@
+Title: Apply Positions
+
+----
+
+Text: 
+
+----
+
+Jobs:
+
+- 
+  job: DISHWASHER
+- 
+  job: CASHIER

@@ -1,0 +1,45 @@
+# Each page blueprint must have a title, the title may be different from the file name
+title: Drink Menu
+icon: 🍷
+
+options:
+  delete: false
+  changeStatus: false
+
+fields:
+  coffeebar:
+    extends: fields/item
+    label: COFFEE BAR
+
+  publicusspecials:
+    extends: fields/item
+    label: PUBLICUS SPECIALS
+
+  extras:
+    extends: fields/item
+    label: EXTRAS
+
+  icedtea:
+    extends: fields/item
+    label: ICED TEA
+    
+  hottea:
+    extends: fields/item
+    label: HOT TEA
+    
+  drinks:
+    extends: fields/item
+    label: DRINKS
+    
+  coldpressedjuice:
+    extends: fields/item
+    label: COLD-PRESSED JUICE
+
+  wine:
+    extends: fields/item
+    label: WINE
+
+  beer:
+    extends: fields/item
+    label: BEER
+

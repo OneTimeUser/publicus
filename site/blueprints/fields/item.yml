@@ -1,0 +1,51 @@
+label: Items
+type: structure
+fields:
+  dish:
+    label: Item
+    type: text
+    width: 1/4
+  description:
+    label: Description
+    type: text
+    width: 2/4
+  tags:
+    width: 1/4
+    type: checkboxes
+    help: gf = gf - gluten free / nf - nut free / df - dairy free / v - vegetarian / vv - vegan / o - option available 
+    options:
+      gf: gf
+      gfo: gfo
+      nf: nf
+      nfo: nfo
+      df: df
+      dfo: dfo
+      v: v
+      vo: vo
+      vv: vv
+      vvo: vvo
+  disclaimer:
+    label: Raw/Undercooked
+    type: checkboxes
+    width: 1/4
+    options:
+      uc: undercooked disclaimer
+  addons:
+    label: Add Ons
+    type: textarea
+    buttons: false
+    placeholder: + add-on item 5
+    width: 1/4
+  price:
+    label: Price
+    type: text
+    width: 1/4
+  unpublished:
+    label: Item is hidden
+    width: 1/4
+    type: checkboxes
+    options: 
+      hide: hide
+    
+#gf - gluten free / nf - nut free / df - dairy free / v - vegetarian / vv - vegan / o - option available
+#*Consuming raw or undercooked meat, poultry, seafood or eggs may increase your risk of food borne illness.

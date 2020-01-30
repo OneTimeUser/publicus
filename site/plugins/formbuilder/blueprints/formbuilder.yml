@@ -1,0 +1,361 @@
+type: fields
+fields:
+  fb_form_settings:
+    type: toggle
+    label: Form Settings
+    translate: false
+    default: true
+    text:
+      - hide
+      - show
+  fb_form_id:
+    type: text
+    label: Form ID
+    counter: false
+    converter: slug
+    translate: false
+    spellcheck: false
+    placeholder: my-form
+    before: "#"
+    width: 1/3
+    help: A <strong>unique ID</strong> for your form.
+    when:
+      fb_form_settings: true
+  fb_form_class:
+    type: text
+    label: Form Class
+    counter: false
+    translate: false
+    spellcheck: false
+    placeholder: form
+    before: "."
+    width: 1/3
+    help: Optional CSS class to add to the &lt;form&gt; element.
+    when:
+      fb_form_settings: true
+  fb_usediv:
+    type: toggle
+    label: Field Structure
+    default: true
+    text:
+      - plain &lt;input&gt;
+      - enclosed in &lt;div&gt;
+    width: 1/3
+    when:
+      fb_form_settings: true
+  fb_builder:
+    type: builder
+    label: Form Fields
+    fieldsets:
+      fb_text: formbuilder/blocks/fb_text
+      fb_textarea: formbuilder/blocks/fb_textarea
+      fb_email: formbuilder/blocks/fb_email
+      fb_tel: formbuilder/blocks/fb_tel
+      fb_number: formbuilder/blocks/fb_number
+      fb_url: formbuilder/blocks/fb_url
+      fb_checkbox: formbuilder/blocks/fb_checkbox
+      fb_radio: formbuilder/blocks/fb_radio
+      fb_select: formbuilder/blocks/fb_select
+      fb_date: formbuilder/blocks/fb_date
+      fb_time: formbuilder/blocks/fb_time
+      fb_password: formbuilder/blocks/fb_password
+      fb_hidden: formbuilder/blocks/fb_hidden
+      fb_honeypot: formbuilder/blocks/fb_honeypot
+      fb_line: formbuilder/blocks/fb_line
+      fb_displaytext: formbuilder/blocks/fb_displaytext
+    when:
+      fb_form_settings: true
+
+  fb_submit_label:
+    type: text
+    label: 'Submit' Buton Label
+    placeholder: Send
+    counter: false
+    width: 1/3
+    when:
+      fb_form_settings: true
+  fb_cancel_label:
+    type: text
+    label: 'Reset' Button label
+    placeholder: Reset
+    counter: false
+    width: 1/3
+    help: Leave empty to omit the button from the form.
+    when:
+      fb_form_settings: true
+  fb_formbtns_class:
+    type: text
+    label: Enclosing Div Class
+    counter: false
+    translate: false
+    spellcheck: false
+    placeholder: form
+    before: "."
+    width: 1/3
+    help: Optional CSS class to add to the enclosing &lt;div&gt; element.
+    when:
+      fb_form_settings: true
+  fb_captcha_line:
+    type: line
+  fb_captcha:
+    type: toggle
+    label: Use hCaptcha
+    translate: false
+    default: false
+    text:
+      - no hCaptcha
+      - use hCaptcha
+    width: 1/3
+    when:
+      fb_form_settings: true
+    help: Sign up for hCaptcha <strong><a href="https://hCaptcha.com/?r=5c848162fd88">here</a></strong>.
+  fb_captcha_theme:
+    type: toggle
+    label: hCaptcha Theme
+    translate: false
+    default: false
+    text:
+      - Light Theme
+      - Dark Theme
+    width: 1/3
+    when:
+      fb_form_settings: true
+      fb_captcha: true
+  fb_captcha_secretkey:
+    type: text
+    label: hCaptcha 'Secret Key'
+    placeholder: '0x0A00A00AA00AA0000A000b0000bA00000b0A0Ab0'
+    counter: false
+    width: 2/3
+    when:
+      fb_form_settings: true
+      fb_captcha: true
+  fb_captcha_sitekey:
+    type: text
+    label: hCaptcha 'Site Key'
+    placeholder: 'a00bbb00-000a-a0b0-a0b00000a0b0'
+    counter: false
+    width: 2/3
+    when:
+      fb_form_settings: true
+      fb_captcha: true
+
+  # ===============================================
+  # FORM RESPONSE CONFIGURATION
+  # ===============================================
+  fb_is_ajax_line:
+    type: line
+    when:
+      fb_form_settings: true
+  fb_is_ajax:
+    type: toggle
+    label: "Success/Error Action"
+    translate: false
+    default: false
+    text:
+      - go to another page
+      - show message in-page
+    width: 1/3
+    when:
+      fb_form_settings: true
+  fb_msg_position:
+    type: toggle
+    label: Message Box Position
+    translate: false
+    default: false
+    text:
+      - bottom of the form
+      - top of the form
+    width: 1/3
+    when:
+      fb_form_settings: true
+      fb_is_ajax: true
+  fb_success_page:
+    type: pages
+    label: Success Page
+    multiple: false
+    max: 1
+    empty: No success page selected yet.
+    width: 1/3
+    image:
+      query: false
+    help: The page the user will go to when the form is successfully submitted.
+    when:
+      fb_form_settings: true
+      fb_is_ajax: false
+  fb_error_page:
+    type: pages
+    label: Error Page
+    multiple: false
+    max: 1
+    empty: No error page selected yet.
+    width: 1/3
+    image:
+      query: false
+    help: The page the user will go to if the form submission fails.
+    when:
+      fb_form_settings: true
+      fb_is_ajax: false
+  fb_success_msg:
+    type: textarea
+    label: Success Message
+    size: small
+    buttons:
+      - bold
+      - italic
+    counter: false
+    placeholder: Your form was received successfully - thank you!
+    help: The message that is displayed when the form is successfully submitted.
+    when:
+      fb_form_settings: true
+      fb_is_ajax: true
+  fb_error_msg:
+    type: textarea
+    label: Error Message
+    size: small
+    buttons:
+      - bold
+      - italic
+    counter: false
+    placeholder: There was an issue sending your form data - please try again!
+    help: The message that is displayed when there is an issue processing the form data.
+    when:
+      fb_form_settings: true
+      fb_is_ajax: true
+
+  # ===============================================
+  # FORM EMAIL CONFIGURATION
+  # ===============================================
+  fb_send_email_line:
+    type: line
+    when:
+      fb_form_settings: true
+  fb_send_email:
+    type: toggle
+    label: Submission Emails
+    translate: false
+    default: false
+    text:
+      - do not send emails
+      - send form data via email
+    width: 1/3
+    when:
+      fb_form_settings: true
+  fb_email_recipient:
+    type: email
+    label: Recipient Email Address
+    placeholder: john@example.com
+    width: 2/3
+    help: Email address that will receive the form emails.
+    when:
+      fb_form_settings: true
+      fb_send_email: true
+  fb_email_sender_type:
+    type: toggle
+    label: Sender Email
+    default: false
+    text:
+      - is always the same
+      - is based on a form field
+    width: 1/3
+    when:
+      fb_form_settings: true
+      fb_send_email: true
+  fb_email_sender:
+    type: email
+    label: Sender Email Address
+    placeholder: admin@example.com
+    width: 2/3
+    help: Email address that will send the form emails.
+    when:
+      fb_form_settings: true
+      fb_send_email: true
+      fb_email_sender_type: false
+  fb_email_sender_field:
+    type: select
+    label: Sender Email Field
+    options: query
+    query:
+      fetch: page.fb_builder.toStructure.filterBy('_key','==','fb_email')
+      text: "{{ structureItem.field_name }}"
+      value: "{{ structureItem.field_name }}"
+    help: Form field from which to get the sender's email address.
+    width: 2/3
+    when:
+      fb_form_settings: true
+      fb_send_email: true
+      fb_email_sender_type: true
+  fb_email_subject:
+    type: text
+    label: Email Subject
+    placeholder: "Message from {{site.title}}"
+    help: 'Subject' heading of emails sent by this form - useful for filtering and archiving messages in your email app.
+    when:
+      fb_form_settings: true
+      fb_send_email: true
+
+
+  # ===============================================
+  # RECEIVED SUBMISSIONS LIST
+  # ===============================================
+  fb_submissions_line:
+    type: line
+    when:
+      fb_form_settings: true
+  fb_save_submissions:
+    type: toggle
+    label: Save Submissions
+    default: false
+    text:
+      - do not save submissions
+      - save all submissions
+    width: 1/3
+    help: Log all form submissions here.
+    when:
+      fb_form_settings: true
+  fb_key_field:
+    type: select
+    label: Key Field
+    options: query
+    query:
+      fetch: page.fb_builder.toBuilderBlocks
+      text: "{{ structureItem.field_name }}"
+      value: "{{ structureItem.field_name }}"
+    width: 1/3
+    help: Field to display in 'Key' column of the Received Submissions table.
+    when:
+      fb_form_settings: true
+      fb_save_submissions: true
+  fb_received_submissions:
+    type: structure
+    label: Received Submissions
+    empty: no submissions received yet.
+    sortable: false
+    sortBy: entry_date desc
+    limit: 20
+    fields:
+      entry_date:
+        type: text
+        label: When
+        counter: false
+        spellcheck: disabled
+        disabled: true
+      entry_key:
+        type: hidden
+        label: Key
+        counter: false
+      entry_content:
+        type: textarea
+        label: Content
+        counter: false
+        font: monospace
+        buttons: false
+        spellcheck: false
+        disabled: true
+    columns:
+      entry_date:
+        width: 1/4
+      entry_key:
+        width: 3/4
+    when:
+      fb_save_submissions: true
