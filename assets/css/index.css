@@ -311,6 +311,10 @@ a:focus {
 
 .titles {
     font-weight: 400;
+
+}
+
+h2.titles {
     margin-right: 20%;
 }
 
