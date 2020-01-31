@@ -222,12 +222,18 @@
                     item.dataset.ctx = tx;
                     item.dataset.cty = ty;
 
+                    let scaleVar = 0.55;
+
+                    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                        scaleVar = 0.9;
+                    }
+
                     if (animate) {
                         TweenMax.to(item, ANIMATION_SETTINGS.grid.duration, {
                             ease: ANIMATION_SETTINGS.grid.ease,
                             x: tx,
                             y: ty,
-                            scale: 0.35,
+                            scale: scaleVar,
                             rotation: rot,
                             onComplete: () => {
                                 ++animateCount;
@@ -240,7 +246,7 @@
                         TweenMax.set(item, {
                             x: tx,
                             y: ty,
-                            scale: 0.35,
+                            scale: scaleVar,
                             rotation: rot
                         });
                         resolve();
@@ -312,6 +318,7 @@
             this.letters = [...this.DOM.link.querySelectorAll('.letter__inner')];
             // Need to recalculate size and position on window resize
             window.addEventListener('resize', () => this.rect = this.DOM.el.getBoundingClientRect());
+            adjustWidth();
         }
         setCurrent() {
             this.DOM.el.classList.add('menu__item--current');
@@ -818,6 +825,7 @@
                 this.renderId = undefined;
             }
             this.DOM.activeBg.style.opacity = "1.0";
+            document.querySelector('main').style.overflow = "visible";
 
             //            this.menuItems[this.current].DOM.content.style.opacity = '1.0';
             document.querySelector('.content-' + (this.current + 1)).style.display = 'block';
@@ -852,6 +860,7 @@
             this.isAnimating = true;
 
             this.DOM.activeBg.style.opacity = "0";
+            document.querySelector('main').style.overflow = "hidden";
             //            this.menuItems[this.current].DOM.content.style.opacity = '0';
             document.querySelector('.content-' + (this.current + 1)).style.opacity = '0';
             document.querySelector('.content-' + (this.current + 1)).style.display = 'none';
@@ -1001,7 +1010,17 @@
     for (let cat of document.querySelectorAll('.menu__menu-cat > .titles')) {
         cat.addEventListener("click", e => menuSwitcher(cat), true);
     }
+    /***********************************/
+    /********** fixed: width fixer **********/
 
+
+
+    function adjustWidth() {
+        var parentwidth = document.querySelector('body').style.width;
+        document.querySelector('main').style.width = parentwidth;
+    }
+
+    adjustWidth();
 
     /***********************************/
     /********** Preload stuff **********/

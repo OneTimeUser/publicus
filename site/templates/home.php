@@ -48,7 +48,7 @@
             <div class="menu__item">
                 <a class="menu__item-link" title="Menu">Menu</a>
                 <article class="menu__item-text">
-                    <a class="menu__item-explore">Explore today's offerings</a>
+                    <a class="menu__item-explore">Explore</a>
                 </article>
 
             </div>
@@ -72,7 +72,7 @@
 
                     <p>Interested in working with us?
                         <p/>
-                        <p>Check out our<a class="menu__item-explore">application form.</a>
+                        <p>Check out our<a class="menu__item-explore"> application form.</a>
                         </p>
                 </article>
 

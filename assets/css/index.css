@@ -256,9 +256,19 @@ a:focus {
     font-weight: 400;
     text-align: left;
     opacity: 0;
-    margin-left: 0.7rem;
     font-size: 1.2rem;
-    text-shadow: black 0px 0px 5px, black 0px 0px 8px, black 0px 0px 13px;
+}
+
+.menu__item:nth-child(3) .menu__item-text p {
+    display: none;
+}
+
+.menu__item:nth-child(3) .menu__item-text p:last-child {
+    display: block;
+}
+
+.menu__item:nth-child(3) .menu__item-explore {
+    margin: 0;
 }
 
 .menu__item-text-link {
@@ -272,7 +282,7 @@ a:focus {
     color: var(--color-explore);
     text-decoration: underline;
     opacity: 0;
-    padding: 0.5rem 0.5rem 0;
+    /*    padding: 0.5rem 0.5rem 0;*/
     will-change: transform;
 }
 
@@ -281,15 +291,15 @@ a:focus {
 
     opacity: 0;
     position: relative;
-    width: 60vw;
     color: black;
     transition: opacity .5s;
     /*
     display: flex;
     flex-flow: column;
 */
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 1;
+    grid-column-end: -1;
 
 }
 
@@ -300,6 +310,7 @@ a:focus {
 
 .titles {
     font-weight: 400;
+    margin-right: 20%;
 }
 
 .item-name,
@@ -320,7 +331,10 @@ a:focus {
 #application-form,
 #contact-form {
     background-color: rgba(255, 255, 255, .9);
-    box-shadow: 0px 0px 8px rgb(255, 255, 255), 0px 0px 8px rgb(255, 255, 255), 0px 0px 8px rgb(255, 255, 255), 0px 0px 8px rgb(255, 255, 255);
+    /*    box-shadow: 0px 0px 8px rgb(255, 255, 255),
+    0px 0px 8px rgb(255, 255, 255),
+    0px 0px 8px rgb(255, 255, 255),
+    0px 0px 8px rgb(255, 255, 255);*/
     padding: 5%;
     text-align: left;
     pointer-events: auto;
@@ -387,16 +401,18 @@ a:focus {
     0px 0px 8px rgb(255, 255, 255);*/
     padding: 5%;
     pointer-events: auto;
-}
-
-.menu__menu-cat {
-    width: 35%;
-    display: flex;
     flex-flow: column wrap;
 }
 
+.menu__menu-cat {
+    width: 48%;
+    display: flex;
+    flex-flow: column wrap;
+    height: 245px;
+}
+
 .menu__menu-items {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
 }
@@ -418,7 +434,7 @@ a:focus {
 }
 
 .menu__menu-options {
-    margin-top: 2rem;
+
     font-size: .9rem;
 }
 
@@ -427,7 +443,6 @@ a:focus {
 .menu__menu-raw {
     font-size: .7rem;
     margin-top: 1rem;
-    width: 60%;
 }
 
 
@@ -474,8 +489,12 @@ ul {
 
 }
 
+.available-jobs {
+    margin: 10px 0;
+}
+
 .available-jobs li {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .page--preview ~ .menu-wrap .menu__item--current .menu__item-explore {
@@ -515,7 +534,7 @@ ul {
     grid-template-columns: 100%;
     grid-template-rows: 3rem 1fr;
     position: relative;
-    padding: 13rem 5vw 2rem;
+    padding: 2.5rem 1rem;
     pointer-events: none;
 }
 
@@ -748,13 +767,61 @@ ul {
 
 @media screen and (min-width: 53em) {
 
+    .menu__item-content {
+        grid-column-start: 1;
+    }
+    .menu__item-text {
+        margin-left: 0.7rem;
+        text-shadow: black 0px 0px 5px, black 0px 0px 8px, black 0px 0px 13px;
+    }
+
+    .menu__item:nth-child(3) .menu__item-text p {
+        display: block;
+    }
+
+    .menu__menu {
+        flex-flow: row wrap;
+    }
+
+    .menu__menu-cat {
+        width: 35%;
+        height: auto;
+
+    }
+
+    .menu__menu-raw {
+
+        width: 60%;
+    }
+
+    .menu__menu-items {
+        width: 65%;
+    }
+    .titles {
+        margin: 0;
+    }
+
+    .menu__menu-options {
+        margin-top: 2rem;
+    }
+
+
+    .available-jobs {
+        margin: 0;
+    }
+
+    .available-jobs li {
+        font-size: 2.5rem;
+    }
+
     .grid-wrap {
         grid-template-rows: 1.25rem 1fr;
         grid-gap: 3rem;
         padding: 2.5rem 3rem;
+
     }
     .grid {
-        padding: 0 10vw;
+        padding: 0 5vw;
     }
 
 }
