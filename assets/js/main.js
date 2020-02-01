@@ -816,6 +816,13 @@
             });
         }
         showContent() {
+            msgBox.setAttribute('hidden', '');
+
+            var showEls = document.querySelectorAll('.full-form > *');
+            for (var i = 0; i < showEls.length; i++) {
+                showEls[i].classList.remove('hide');
+            }
+
             if (this.isAnimating) return;
             this.isAnimating = true;
 
@@ -829,7 +836,31 @@
 
             //            this.menuItems[this.current].DOM.content.style.opacity = '1.0';
             document.querySelector('.content-' + (this.current + 1)).style.display = 'block';
-            document.querySelector('.content-' + (this.current + 1)).style.opacity = '1.0';
+
+            //check if its apply or contact so we can appropriately hide sections
+            if (this.current == 2) {
+                var hiddenEls = document.querySelectorAll('.form-con');
+                for (var i = 0; i < hiddenEls.length; i++) {
+                    hiddenEls[i].classList.add('hide');
+                }
+                document.querySelector('.content-' + (this.current + 1)).style.opacity = '1.0';
+            } else if (this.current == 3) {
+                document.querySelector('.content-' + (this.current)).style.display = 'block';
+
+                var hiddenEls = document.querySelectorAll('.form-app');
+                for (var i = 0; i < hiddenEls.length; i++) {
+                    hiddenEls[i].classList.add('hide');
+                }
+                document.querySelector(".full-form p").classList.add('hide');
+                document.querySelector(".full-form ul").classList.add('hide');
+
+                document.querySelector('.content-' + (this.current)).style.opacity = '1.0';
+            } else {
+                document.querySelector('.content-' + (this.current + 1)).style.opacity = '1.0';
+            }
+
+
+
 
             //            document.querySelector('.content-' + (this.current + 1)).style.pointerEvents = 'auto';
 
@@ -862,9 +893,21 @@
             this.DOM.activeBg.style.opacity = "0";
             document.querySelector('main').style.overflow = "hidden";
             //            this.menuItems[this.current].DOM.content.style.opacity = '0';
-            document.querySelector('.content-' + (this.current + 1)).style.opacity = '0';
+
+
+            //check if its apply or contact so we can appropriately hide sections
+            if (this.current == 3) {
+
+
+                document.querySelector('.content-' + (this.current)).style.opacity = '0';
+
+                document.querySelector('.content-' + (this.current)).style.display = 'none';
+            } else {
+                document.querySelector('.content-' + (this.current + 1)).style.opacity = '0';
+            }
+
             document.querySelector('.content-' + (this.current + 1)).style.display = 'none';
-            //            document.querySelector('.content-' + (this.current + 1)).style.pointerEvents = 'none';
+
 
             // First scroll to the top
             scrollIt(0, 300, 'easeOutQuad', () => {

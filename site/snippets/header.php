@@ -198,7 +198,7 @@ function debug_to_console($data) {
                         <?php $i++ ?>
                         <?php endwhile; ?>
                         <section class="menu__item-content content-4">
-                            <?php snippet('formbuilder',['pg' => 'contact-form']); ?>
+<!--                           -->
                         </section>
                     </div>
                     <button class="gridback">

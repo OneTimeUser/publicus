@@ -337,6 +337,10 @@ h2.titles {
     /*    content="+";*/
 }
 
+.content-3 {
+    z-index: 9;
+}
+
 #application-form,
 #contact-form {
     background-color: rgba(255, 255, 255, .9);
@@ -353,7 +357,7 @@ h2.titles {
 #application-form textarea,
 #contact-form input,
 #contact-form textarea,
-.contact-subject select {
+select#contact-sub {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     font-size: 1.2rem;
@@ -363,11 +367,11 @@ h2.titles {
 
 #application-form textarea,
 #contact-form textarea,
-.contact-subject select {
+#contact-sub {
     border: 1px solid black;
 }
 
-.contact-subject select {
+#application-form select {
     height: 3rem;
 }
 
@@ -388,7 +392,7 @@ h2.titles {
     color: red;
 }
 
-.contact-subject label {
+.form-con label {
     width: 50%;
     color: black;
     display: inline-block;
@@ -408,6 +412,9 @@ h2.titles {
     padding-right: 2%;
 }
 
+.hide {
+    display: none;
+}
 
 .menu__menu {
     display: flex;
@@ -785,7 +792,8 @@ ul {
 @media screen and (min-width: 53em) {
 
     .menu__item-content {
-        grid-column-start: 1;
+        grid-column-start: 2;
+        grid-column-end: 10;
     }
     .menu__item-text {
         margin-left: 0.7rem;
@@ -839,6 +847,14 @@ ul {
     }
     .grid {
         padding: 0 5vw;
+    }
+
+}
+
+@media screen and (min-width: 110em) {
+    .menu__item-content {
+        grid-column-start: 3;
+        grid-column-end: 9;
     }
 
 }

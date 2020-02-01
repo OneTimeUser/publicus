@@ -10,7 +10,7 @@ Fb-form-id: application-form
 
 ----
 
-Fb-form-class: 
+Fb-form-class: full-form
 
 ----
 
@@ -38,7 +38,7 @@ Fb-builder:
   _uid: fb_displaytext_1580000880745_2278
 - 
   field_name: applicant-name
-  field_class: half
+  field_class: half form-both
   req: 'true'
   field_label: Name
   placeholder: ""
@@ -50,7 +50,7 @@ Fb-builder:
   _uid: fb_text_1579313496374_798
 - 
   field_name: applicant-email
-  field_class: half
+  field_class: half form-both
   req: 'true'
   field_label: Email
   placeholder: hello@publicus.lv
@@ -62,8 +62,8 @@ Fb-builder:
   _uid: fb_email_1579313583366_1158
 - 
   field_name: applicant-phone
-  field_class: half
-  req: 'true'
+  field_class: half form-app
+  req: 'false'
   field_label: Contact Number
   placeholder: ""
   default: ""
@@ -74,8 +74,8 @@ Fb-builder:
   _uid: fb_tel_1579313624715_1510
 - 
   field_name: position
-  field_class: half
-  req: 'true'
+  field_class: half form-app
+  req: 'false'
   field_label: Position Desired
   placeholder: ""
   default: ""
@@ -86,8 +86,8 @@ Fb-builder:
   _uid: fb_text_1579313660761_1862
 - 
   field_name: fav-1
-  field_class: ""
-  req: 'true'
+  field_class: form-app
+  req: 'false'
   field_label: What is your favorite time of day?
   placeholder: ""
   default: ""
@@ -98,8 +98,8 @@ Fb-builder:
   _uid: fb_text_1579313714537_2214
 - 
   field_name: fav-2
-  field_class: ""
-  req: 'true'
+  field_class: form-app
+  req: 'false'
   field_label: What is your favorite meal of the day?
   placeholder: ""
   default: ""
@@ -110,8 +110,8 @@ Fb-builder:
   _uid: fb_text_1579313755007_2566
 - 
   field_name: fav-3
-  field_class: ""
-  req: 'true'
+  field_class: form-app
+  req: 'false'
   field_label: What is your favorite food?
   placeholder: ""
   default: ""
@@ -122,8 +122,8 @@ Fb-builder:
   _uid: fb_text_1579313798960_2918
 - 
   field_name: fav-4
-  field_class: ""
-  req: 'true'
+  field_class: form-app
+  req: 'false'
   field_label: Name your favorite place.
   placeholder: restaurant, city, etc.
   default: ""
@@ -134,8 +134,8 @@ Fb-builder:
   _uid: fb_text_1579313820682_3270
 - 
   field_name: fav-5
-  field_class: ""
-  req: 'true'
+  field_class: form-app
+  req: 'false'
   field_label: >
     What is the best thing about living in
     Las Vegas?
@@ -148,8 +148,8 @@ Fb-builder:
   _uid: fb_textarea_1579313918690_3976
 - 
   field_name: fav-6
-  field_class: ""
-  req: 'true'
+  field_class: form-app
+  req: 'false'
   field_label: >
     Why do you want to work in the
     restaurant industry?
@@ -162,7 +162,7 @@ Fb-builder:
   _uid: fb_textarea_1579313951947_4322
 - 
   field_name: resume
-  field_class: ""
+  field_class: form-app
   req: 'false'
   field_label: Paste your resume here
   placeholder: ""
@@ -172,6 +172,35 @@ Fb-builder:
   rows: 5
   _key: fb_textarea
   _uid: fb_textarea_1579316056287_2485
+- 
+  field_name: contact-sub
+  field_class: form-con
+  req: 'false'
+  field_label: Subject
+  multiple: 'false'
+  menuitems:
+    - 
+      item_label: ""
+      item_value: General
+      item_state: 'true'
+    - 
+      item_label: ""
+      item_value: Catering
+      item_state: 'false'
+  _key: fb_select
+  _uid: fb_select_1580580766572_9130
+- 
+  field_name: contact-mess
+  field_class: form-con
+  req: 'false'
+  field_label: Message
+  placeholder: ""
+  default: ""
+  min: null
+  max: null
+  rows: 3
+  _key: fb_textarea
+  _uid: fb_textarea_1580580837548_9538
 
 ----
 
@@ -219,11 +248,11 @@ Fb-error-page:
 
 ----
 
-Fb-success-msg: Your Application form has been successfully submitted! Thank you.
+Fb-success-msg: Your form has been successfully submitted! Thank you.
 
 ----
 
-Fb-error-msg: There was an issue sending your application. Please try again.
+Fb-error-msg: There was an issue. Please try again.
 
 ----
 
@@ -247,7 +276,7 @@ Fb-email-sender-field: applicant-email
 
 ----
 
-Fb-email-subject: New Application
+Fb-email-subject: New Inquiry!
 
 ----
 
