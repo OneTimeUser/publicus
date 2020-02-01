@@ -71,7 +71,7 @@ Fb-builder:
 - 
   field_name: contact-message
   field_class: ""
-  req: 'false'
+  req: 'true'
   field_label: Message
   placeholder: ""
   default: ""
@@ -111,7 +111,7 @@ Fb-captcha-sitekey: ebc2511b-d6d6-459b-9b7c-d0f7c702edbd
 
 ----
 
-Fb-is-ajax: false
+Fb-is-ajax: true
 
 ----
 
@@ -127,11 +127,11 @@ Fb-error-page:
 
 ----
 
-Fb-success-msg: 
+Fb-success-msg: Thank you for contacting us. Someone will get back to you shortly.
 
 ----
 
-Fb-error-msg: 
+Fb-error-msg: Woops. Something happened. Try sending again.
 
 ----
 

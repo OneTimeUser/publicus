@@ -239,14 +239,18 @@ a:focus {
     font-size: 12vw;
     display: flex;
     line-height: 1.2;
+    /*
     background: url("../img/publicus-bw.png") center;
     background-size: auto;
     background-clip: border-box;
     background-size: cover;
+*/
     margin: auto;
+    /*
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+*/
 }
 
 
@@ -374,6 +378,14 @@ h2.titles {
 #application-form div,
 #contact-form div {
     margin: 10px 0;
+}
+
+.messagebox {
+    color: green;
+}
+
+.messagebox.error {
+    color: red;
 }
 
 .contact-subject label {

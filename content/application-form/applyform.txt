@@ -203,7 +203,7 @@ Fb-captcha-sitekey: ebc2511b-d6d6-459b-9b7c-d0f7c702edbd
 
 ----
 
-Fb-is-ajax: false
+Fb-is-ajax: true
 
 ----
 
@@ -219,11 +219,11 @@ Fb-error-page:
 
 ----
 
-Fb-success-msg: 
+Fb-success-msg: Your Application form has been successfully submitted! Thank you.
 
 ----
 
-Fb-error-msg: 
+Fb-error-msg: There was an issue sending your application. Please try again.
 
 ----
 

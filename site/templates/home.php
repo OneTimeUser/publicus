@@ -72,7 +72,7 @@
 
                     <p>Interested in working with us?
                         <p/>
-                        <p>Check out our<a class="menu__item-explore"> application form.</a>
+                        <p>Check out our <a class="menu__item-explore"> application form.</a>
                         </p>
                 </article>
 
