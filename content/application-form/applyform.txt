@@ -198,7 +198,7 @@ Fb-builder:
   default: ""
   min: null
   max: null
-  rows: 3
+  rows: 10
   _key: fb_textarea
   _uid: fb_textarea_1580580837548_9538
 

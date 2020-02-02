@@ -537,8 +537,10 @@
                     opacity: this.renderedStyles.imgOpacity.previous,
                     scaleX: this.renderedStyles.imgScaleX.previous,
                     scaleY: this.renderedStyles.imgScaleY.previous,
-                    x: this.dragDirection === 'left' ? -1 * this.renderedStyles.imgTranslation.previous + '%' : this.renderedStyles.imgTranslation.previous + '%'
+                    x: this.dragDirection === 'left' ? 0 + '%' : this.renderedStyles.imgTranslation.previous + '%'
                 });
+                
+                //x var is what causes it to stay in the same place  -1*this.renderedStyles.imgTranslation.previous
                 TweenMax.set(this.upcomingItem.imageGrid.DOM.images, {
                     transformOrigin: this.dragDirection === 'left' ? '0% 50%' : '100% 50%',
                     opacity: Math.abs(1 - this.renderedStyles.imgOpacity.previous),

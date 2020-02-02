@@ -21,15 +21,20 @@
                 <a class="menu__item-link" title="PublicUs">PublicUs</a>
 
                 <article class="menu__item-text info">
-                    <p>
-                        <?= page('about')->address()->kirbytext() ?>
-                    </p>
+                    <div>
+                        <p>
+                            <?= page('about')->address()->kirbytextinline() ?>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <?= page('about')->phone() ?>
+                        </p>
+                        <p><a href="emailto:<?= page('about')->email() ?>"><?= page('about')->email() ?></a></p>
+                    </div>
 
-                    <a href="emailto:<?= page('about')->email() ?>"><?= page('about')->email() ?></a>
 
-                    <p>
-                        <?= page('about')->phone() ?>
-                    </p>
+
                     <div class="social-row">
                         <!-- Structure for Social links -->
                         <?php 
@@ -55,10 +60,12 @@
             <div class="menu__item">
                 <a class="menu__item-link" title="Apply">Apply</a>
                 <article class="menu__item-text">
+                    <?php if (page('apply-positions')->text()->isNotEmpty()): ?>
                     <p>
-                        <?= page('apply-positions')->text()->kt(); ?>
+                        <?= page('apply-positions')->text()->kirbytextinline(); ?>
                     </p>
-                    <p>Currently we are hiring for the following positions:</p>
+                    <?php endif ?>
+                    <p>Positions available:</p>
                     <?php 
                     // using the `toStructure()` method, we create a structure collection
                     $jobs = page('apply-positions')->jobs()->toStructure(); ?>
@@ -69,18 +76,15 @@
                         </li>
                         <?php endforeach ?>
                     </ul>
-
-                    <p>Interested in working with us?
-                        <p/>
-                        <p>Check out our <a class="menu__item-explore"> application form.</a>
-                        </p>
+                    <p><a class="menu__item-explore"> Apply here!</a>
+                    </p>
                 </article>
 
             </div>
             <div class="menu__item">
                 <a class="menu__item-link" title="Contact">Contact</a>
                 <article class="menu__item-text">
-                    <a class="menu__item-explore">Click here to leave us a message!</a>
+                    <a class="menu__item-explore">Leave a message!</a>
                 </article>
 
             </div>
