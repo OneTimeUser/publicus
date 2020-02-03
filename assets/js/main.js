@@ -22,13 +22,13 @@
     };
 
     //TEMP bottom bar fix - otherwise move text to middle or something
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-        let mobileAdjust = document.querySelectorAll('.menu__item-text');
-        mobileAdjust.forEach((item) => {
-            item.style.bottom = "15vh";
-        })
-    };
+//    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+//
+//        let mobileAdjust = document.querySelectorAll('.menu__item-text');
+//        mobileAdjust.forEach((item) => {
+//            item.style.bottom = "15vh";
+//        })
+//    };
 
 
 
