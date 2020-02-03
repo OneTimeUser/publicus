@@ -21,6 +21,17 @@
         getRandomFloat: (min, max) => (Math.random() * (max - min) + min).toFixed(2)
     };
 
+    //TEMP bottom bar fix - otherwise move text to middle or something
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+        let mobileAdjust = document.querySelectorAll('.menu__item-text');
+        mobileAdjust.forEach((item) => {
+            item.style.bottom = "10vh";
+        })
+    };
+
+
+
     // Gets the mouse position
     const getMousePos = (e) => {
         let posx = 0;
@@ -226,6 +237,7 @@
 
                     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                         scaleVar = 0.9;
+
                     }
 
                     if (animate) {
@@ -539,7 +551,7 @@
                     scaleY: this.renderedStyles.imgScaleY.previous,
                     x: this.dragDirection === 'left' ? 0 + '%' : this.renderedStyles.imgTranslation.previous + '%'
                 });
-                
+
                 //x var is what causes it to stay in the same place  -1*this.renderedStyles.imgTranslation.previous
                 TweenMax.set(this.upcomingItem.imageGrid.DOM.images, {
                     transformOrigin: this.dragDirection === 'left' ? '0% 50%' : '100% 50%',
