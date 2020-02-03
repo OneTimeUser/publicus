@@ -26,7 +26,7 @@
 
         let mobileAdjust = document.querySelectorAll('.menu__item-text');
         mobileAdjust.forEach((item) => {
-            item.style.bottom = "10vh";
+            item.style.bottom = "15vh";
         })
     };
 
