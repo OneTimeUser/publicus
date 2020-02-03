@@ -22,13 +22,27 @@
     };
 
     //TEMP bottom bar fix - otherwise move text to middle or something
-//    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-//
-//        let mobileAdjust = document.querySelectorAll('.menu__item-text');
-//        mobileAdjust.forEach((item) => {
-//            item.style.bottom = "15vh";
-//        })
-//    };
+    //    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    //
+    //        let mobileAdjust = document.querySelectorAll('.menu__item-text');
+    //        mobileAdjust.forEach((item) => {
+    //            item.style.bottom = "15vh";
+    //        })
+    //    };
+
+    if (window.innerWidth <= 1024) {
+        let botEl = document.querySelector("html");
+        botEl.style.setProperty('--inner-height', document.documentElement.clientHeight - window.innerHeight + 20 + 'px');
+
+        console.log(document.documentElement.clientHeight - window.innerHeight);
+
+        //        for (var i = 0; i < botEl.length; i++) {
+        //            botEl[i].style.setProperty('--inner-height', window.innerHeight);
+        //
+        //        }
+
+
+    }
 
 
 
