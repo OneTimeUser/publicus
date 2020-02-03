@@ -31,7 +31,7 @@
     </footer>
 -->
     <?= js([
-    'assets/js/scope-polyfill.js',
+    'assets/js/inner-height-ios.js',
     'assets/js/imagesloaded.pkgd.min.js',
     'assets/js/charming.min.js',
     'assets/js/TweenMax.min.js',

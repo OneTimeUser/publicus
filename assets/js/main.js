@@ -1116,7 +1116,7 @@
             botEl.style.setProperty('--inner-height', document.documentElement.clientHeight - window.innerHeight + 20 + 'px');
             console.log(document.documentElement.clientHeight);
             console.log(window.innerHeight);
-            console.log(document.querySelector('html').clientHeight);
+            console.log(iosInnerHeight());
         }
         document.body.classList.remove('loading');
 
