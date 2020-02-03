@@ -30,19 +30,6 @@
     //        })
     //    };
 
-    if (window.innerWidth <= 1024) {
-        let botEl = document.querySelector("html");
-        botEl.style.setProperty('--inner-height', document.documentElement.clientHeight - window.innerHeight + 20 + 'px');
-
-        console.log(document.documentElement.clientHeight - window.innerHeight);
-
-        //        for (var i = 0; i < botEl.length; i++) {
-        //            botEl[i].style.setProperty('--inner-height', window.innerHeight);
-        //
-        //        }
-
-
-    }
 
 
 
@@ -1123,6 +1110,11 @@
     ]).then(() => {
         // the Menu
         const menu = new Menu(document.querySelector('.menu-wrap'));
+
+        if (window.innerWidth <= 1024) {
+            let botEl = document.querySelector("html");
+            botEl.style.setProperty('--inner-height', document.documentElement.clientHeight - window.innerHeight + 20 + 'px');
+        }
         document.body.classList.remove('loading');
 
         //        const parentDOM = document.querySelector(".menu__menu-cat");
