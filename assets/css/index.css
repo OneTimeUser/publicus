@@ -263,7 +263,7 @@ a:focus {
     font-size: 1.2rem;
     text-shadow: black 0px 0px 5px;
     position: absolute;
-    bottom: 80px;
+    bottom: 3vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
