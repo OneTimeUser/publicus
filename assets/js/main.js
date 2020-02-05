@@ -1114,9 +1114,8 @@
         if (window.innerWidth <= 1024) {
             let botEl = document.querySelector("html");
             botEl.style.setProperty('--inner-height', iosInnerHeight() - window.innerHeight + 20 + 'px');
-            console.log(document.documentElement.clientHeight);
+
             console.log(window.innerHeight);
-            console.log(window.outerHeight);
             console.log(iosInnerHeight());
         }
         document.body.classList.remove('loading');

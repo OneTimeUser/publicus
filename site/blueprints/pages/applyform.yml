@@ -17,5 +17,7 @@ options:
 # Columns are optional but help structure the form layout
 # More about columns: https://getkirby.com/docs/guide/blueprints/layout#defining-columns
 sections:
+  info:
+    text: Due to the architecture of the site and limitations with the formbuilder plugin used to allow ease of creating forms, the application form and the contact form have been condensed into the same form. The will appear separate to the user, but the admin panel will have all of the application sections first followed by the last two contact form sections.
   applyform:
     extends: formbuilder   

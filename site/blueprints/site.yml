@@ -23,6 +23,7 @@ columns:
           - apply
           - applyform
           - contactform 
+        help: Contact form sections can be accessed via the Application form. 
 #      food:
 #        headline: Daily Menu
 #        type: info
