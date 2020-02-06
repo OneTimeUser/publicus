@@ -902,26 +902,9 @@
             Promise.all(promises).then(() => this.isAnimating = false);
         }
         hideContent() {
-//            if (this.isAnimating) return;
+            if (this.isAnimating) return;
             this.isAnimating = true;
 
-            this.DOM.activeBg.style.opacity = "0";
-            document.querySelector('main').style.overflow = "hidden";
-            //            this.menuItems[this.current].DOM.content.style.opacity = '0';
-
-
-            //check if its apply or contact so we can appropriately hide sections
-            if (this.current == 3) {
-
-
-                document.querySelector('.content-' + (this.current)).style.opacity = '0';
-
-                document.querySelector('.content-' + (this.current)).style.display = 'none';
-            } else {
-                document.querySelector('.content-' + (this.current + 1)).style.opacity = '0';
-            }
-
-            document.querySelector('.content-' + (this.current + 1)).style.display = 'none';
 
 
             // First scroll to the top
@@ -931,6 +914,25 @@
 
                 // Restart the rAF loop
                 this.renderId = requestAnimationFrame(() => this.render());
+
+                this.DOM.activeBg.style.opacity = "0";
+                document.querySelector('main').style.overflow = "hidden";
+                //            this.menuItems[this.current].DOM.content.style.opacity = '0';
+
+
+                //check if its apply or contact so we can appropriately hide sections
+                if (this.current == 3) {
+
+
+                    document.querySelector('.content-' + (this.current)).style.opacity = '0';
+
+                    document.querySelector('.content-' + (this.current)).style.display = 'none';
+                } else {
+                    document.querySelector('.content-' + (this.current + 1)).style.opacity = '0';
+                }
+
+                document.querySelector('.content-' + (this.current + 1)).style.display = 'none';
+
 
                 let promises = [];
                 // Spread the grid items forming again the original grid
