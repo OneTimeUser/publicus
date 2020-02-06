@@ -93,7 +93,8 @@ function debug_to_console($data) {
                                         </ul>
                                     </div>
                                     <p class="menu__menu-raw">
-                                        *Consuming raw or undercooked meat, poultry, seafood or eggs may increase your risk of food borne illness.
+                                        *Consuming raw or undercooked meat, poultry, seafood or eggs may increase your risk of food borne illness.<br/>
+                                        **No modifications
                                     </p>
                                    
 
@@ -148,7 +149,8 @@ function debug_to_console($data) {
                                         <?php if ($item->unpublished() ->isFalse()): ?>
                                         <div class="menu__menu-item">
                                             <h4 class="titles item-name">
-                                                <?= $item->dish() ?> -
+                                                <?= $item->dish() ?><?php if ($item->disclaimer()->isNotEmpty()): ?>
+                                                **<?php endif ?> -
                                                     <?= $item->price() ?>
                                             </h4>
                                             <p class="item-desc">

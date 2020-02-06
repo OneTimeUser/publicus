@@ -92,8 +92,8 @@ label {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: url(../img/publicus-bw.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -352,6 +352,10 @@ h2.titles {
     margin-right: 20%;
 }
 
+#drinks section h3 {
+    font-size: 1.5rem;
+}
+
 .item-name,
 .item-price {
     font-size: 1.2rem
@@ -402,7 +406,7 @@ select#contact-sub {
 }
 
 #application-form select {
-    height: 3rem;
+    height: 2rem;
 }
 
 #application-form li:before {

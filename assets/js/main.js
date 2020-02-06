@@ -902,7 +902,7 @@
             Promise.all(promises).then(() => this.isAnimating = false);
         }
         hideContent() {
-            if (this.isAnimating) return;
+//            if (this.isAnimating) return;
             this.isAnimating = true;
 
             this.DOM.activeBg.style.opacity = "0";
