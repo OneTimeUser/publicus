@@ -918,7 +918,7 @@
                 this.DOM.activeBg.style.opacity = "0";
                 document.querySelector('main').style.overflow = "hidden";
                 //            this.menuItems[this.current].DOM.content.style.opacity = '0';
-
+                console.log(this.current);
 
                 //check if its apply or contact so we can appropriately hide sections
                 if (this.current == 3) {
