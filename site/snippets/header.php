@@ -14,7 +14,7 @@ function debug_to_console($data) {
     <head>
 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
 
         <!-- The title tag we show the title of our site and the title of the current page -->
         <title>
