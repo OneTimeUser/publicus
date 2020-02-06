@@ -10,10 +10,11 @@
 return [
     'debug' => true,
     'email' => [
-    'transport' => [
-      'type' => 'smtp',
-      'host' => 'smtp.publicuslv.com',
-      'port' => 465,
-      'security' => true
+        'transport' => [
+          'type' => 'smtp',
+          'host' => 'smtp.company.com',
+          'port' => 465,
+          'security' => true
+        ]
     ]
-  ]
+];
