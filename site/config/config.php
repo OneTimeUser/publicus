@@ -12,7 +12,7 @@ return [
     'email' => [
         'transport' => [
           'type' => 'smtp',
-          'host' => 'smtp.publicuslv.com',
+          'host' => 'smtp.publicuslv.frb.io',
           'port' => 465,
           'security' => true
         ]
