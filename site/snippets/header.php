@@ -74,6 +74,7 @@ function debug_to_console($data) {
                         <section class="menu__item-content content-2">
                             <article class="menu__menu">
                                 <section class="menu__menu-cat">
+                                    <div>
                                     <?php foreach ($foodcategories as $category): ?>
                                     <h2 class="titles title-<?= $category ?><?php if ($category == 'BREKKIE'):?> active-menu-cat <?php endif ?>" data-attribute="<?= strtolower($category) ?>">
                                         <?= $category ?>
@@ -81,7 +82,8 @@ function debug_to_console($data) {
                                     <?php endforeach ?>
                                     
                                     <h2 class="titles title-DRINKS" data-attribute="drinks">DRINKS</h2>
-                                    
+                                    </div>
+                                    <div>
                                     <div class="menu__menu-options">
                                         <ul>
                                             <li><span>gf</span> - gluten free</li> 
@@ -96,7 +98,7 @@ function debug_to_console($data) {
                                         *Consuming raw or undercooked meat, poultry, seafood or eggs may increase your risk of food borne illness.<br/>
                                         **No modifications
                                     </p>
-                                   
+                                    </div>
 
 
 

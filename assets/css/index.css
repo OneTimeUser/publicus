@@ -314,7 +314,6 @@ a:focus {
     margin: 0.5rem 0 0 0;
     display: inline-block;
     color: var(--color-explore);
-    text-decoration: underline;
     opacity: 0;
     /*    padding: 0.5rem 0.5rem 0;*/
     will-change: transform;
@@ -463,10 +462,14 @@ select#contact-sub {
 }
 
 .menu__menu-cat {
-    width: 48%;
+
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row;
     height: 245px;
+}
+
+.menu__menu-cat div:nth-child(1) {
+    margin-right: 20px;
 }
 
 .menu__menu-items {
@@ -875,7 +878,11 @@ ul {
     .menu__menu-cat {
         width: 35%;
         height: auto;
+        flex-flow: column wrap;
+    }
 
+    .menu__menu-cat div:nth-child(1) {
+        margin-right: 0;
     }
 
     .menu__menu-raw {
