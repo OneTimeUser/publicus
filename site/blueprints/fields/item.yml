@@ -25,11 +25,11 @@ fields:
       vv: vv
       vvo: vvo
   disclaimer:
-    label: Raw/Undercooked
+    label: Undercooked/No Mod *
     type: checkboxes
     width: 1/4
     options:
-      uc: undercooked disclaimer
+      uc: disclaimer
   addons:
     label: Add Ons
     type: textarea

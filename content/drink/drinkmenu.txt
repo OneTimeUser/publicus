@@ -5,11 +5,12 @@ Title: Drink
 Coffeebar:
 
 - 
-  dish: Kona Blend
+  dish: Filter Coffee
   description: ""
   tags: ""
+  disclaimer: ""
   addons: ""
-  price: 6
+  price: "3"
   unpublished: ""
 
 ----
@@ -17,11 +18,12 @@ Coffeebar:
 Publicusspecials:
 
 - 
-  dish: "Kimo's Snot"
-  description: Yellow Pineapple Goo
+  dish: PublicUs Palmer
+  description: Chilled Espresso Floated on Lemonade
   tags: ""
+  disclaimer: uc
   addons: ""
-  price: 13
+  price: "5"
   unpublished: ""
 
 ----
@@ -29,11 +31,12 @@ Publicusspecials:
 Extras:
 
 - 
-  dish: Coconut Cream
+  dish: Extra Shot
   description: ""
   tags: ""
+  disclaimer: ""
   addons: ""
-  price: 5
+  price: ".75"
   unpublished: ""
 
 ----
@@ -41,11 +44,12 @@ Extras:
 Icedtea:
 
 - 
-  dish: Moringa Tea
+  dish: Samovar Organic Black Iced Tea
   description: ""
   tags: ""
+  disclaimer: ""
   addons: ""
-  price: 12
+  price: "4"
   unpublished: ""
 
 ----
@@ -53,11 +57,12 @@ Icedtea:
 Hottea:
 
 - 
-  dish: Plain ole green tea
+  dish: 'Wild Tree Yunnan Red - Black'
   description: ""
   tags: ""
+  disclaimer: ""
   addons: ""
-  price: 5
+  price: "5"
   unpublished: ""
 
 ----
@@ -65,11 +70,12 @@ Hottea:
 Drinks:
 
 - 
-  dish: 'Sodas '
-  description: Galore
+  dish: 'Q Sodas '
+  description: Ginger, Grapefruit, Kola
   tags: ""
+  disclaimer: ""
   addons: ""
-  price: 2
+  price: "2.25"
   unpublished: ""
 
 ----
@@ -77,11 +83,14 @@ Drinks:
 Coldpressedjuice:
 
 - 
-  dish: Orange Juice
-  description: ""
+  dish: Rasa Lila
+  description: >
+    Ginger, Lemon, Orange, Maple Syrup,
+    Turmeric, Nutmeg, Cinnamon, Black Pepper
   tags: ""
+  disclaimer: ""
   addons: ""
-  price: 3
+  price: "7"
   unpublished: ""
 
 ----
@@ -89,11 +98,12 @@ Coldpressedjuice:
 Wine:
 
 - 
-  dish: Blush Wine
-  description: "It'll make you..."
+  dish: Chateau Soucherie Rose d’Loire
+  description: ""
   tags: ""
+  disclaimer: ""
   addons: ""
-  price: 8
+  price: "10"
   unpublished: ""
 
 ----
@@ -101,11 +111,12 @@ Wine:
 Beer:
 
 - 
-  dish: Pabst
+  dish: Tenaya Creek Oktoberfest (local)
   description: ""
   tags: ""
+  disclaimer: ""
   addons: ""
-  price: 4
+  price: "5.5"
   unpublished: ""
 
 ----

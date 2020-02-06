@@ -502,6 +502,11 @@ select#contact-sub {
 
 .info {
     font-size: 1.2rem;
+
+}
+
+.info a {
+    text-decoration: none;
 }
 
 .social-row {

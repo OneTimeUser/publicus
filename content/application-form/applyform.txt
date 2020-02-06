@@ -37,7 +37,7 @@ Fb-builder:
   _key: fb_displaytext
   _uid: fb_displaytext_1580000880745_2278
 - 
-  field_name: applicant-name
+  field_name: name
   field_class: half form-both
   req: 'true'
   field_label: Name
@@ -49,7 +49,7 @@ Fb-builder:
   _key: fb_text
   _uid: fb_text_1579313496374_798
 - 
-  field_name: applicant-email
+  field_name: email
   field_class: half form-both
   req: 'true'
   field_label: Email
@@ -73,19 +73,24 @@ Fb-builder:
   _key: fb_tel
   _uid: fb_tel_1579313624715_1510
 - 
-  field_name: position
+  field_name: applicant-position
   field_class: half form-app
   req: 'false'
   field_label: Position Desired
-  placeholder: ""
-  default: ""
-  min: null
-  max: null
-  pattern: ""
-  _key: fb_text
-  _uid: fb_text_1579313660761_1862
+  multiple: 'true'
+  menuitems:
+    - 
+      item_label: Dishwasher
+      item_value: Dishwasher
+      item_state: 'true'
+    - 
+      item_label: Cashier
+      item_value: Cashier
+      item_state: 'false'
+  _key: fb_select
+  _uid: fb_select_1580954686965_2804
 - 
-  field_name: fav-1
+  field_name: applicant-fav-1
   field_class: form-app
   req: 'false'
   field_label: What is your favorite time of day?
@@ -97,7 +102,7 @@ Fb-builder:
   _key: fb_text
   _uid: fb_text_1579313714537_2214
 - 
-  field_name: fav-2
+  field_name: applicant-fav-2
   field_class: form-app
   req: 'false'
   field_label: What is your favorite meal of the day?
@@ -109,7 +114,7 @@ Fb-builder:
   _key: fb_text
   _uid: fb_text_1579313755007_2566
 - 
-  field_name: fav-3
+  field_name: applicant-fav-3
   field_class: form-app
   req: 'false'
   field_label: What is your favorite food?
@@ -121,7 +126,7 @@ Fb-builder:
   _key: fb_text
   _uid: fb_text_1579313798960_2918
 - 
-  field_name: fav-4
+  field_name: applicant-fav-4
   field_class: form-app
   req: 'false'
   field_label: Name your favorite place.
@@ -133,7 +138,7 @@ Fb-builder:
   _key: fb_text
   _uid: fb_text_1579313820682_3270
 - 
-  field_name: fav-5
+  field_name: applicant-fav-5
   field_class: form-app
   req: 'false'
   field_label: >
@@ -147,7 +152,7 @@ Fb-builder:
   _key: fb_textarea
   _uid: fb_textarea_1579313918690_3976
 - 
-  field_name: fav-6
+  field_name: applicant-fav-6
   field_class: form-app
   req: 'false'
   field_label: >
@@ -161,7 +166,7 @@ Fb-builder:
   _key: fb_textarea
   _uid: fb_textarea_1579313951947_4322
 - 
-  field_name: resume
+  field_name: applicant-resume
   field_class: form-app
   req: 'false'
   field_label: Paste your resume here
@@ -173,7 +178,7 @@ Fb-builder:
   _key: fb_textarea
   _uid: fb_textarea_1579316056287_2485
 - 
-  field_name: contact-sub
+  field_name: contact-subject
   field_class: form-con
   req: 'false'
   field_label: Subject
@@ -190,7 +195,7 @@ Fb-builder:
   _key: fb_select
   _uid: fb_select_1580580766572_9130
 - 
-  field_name: contact-mess
+  field_name: contact-message
   field_class: form-con
   req: 'false'
   field_label: Message
@@ -272,7 +277,7 @@ Fb-email-sender:
 
 ----
 
-Fb-email-sender-field: applicant-email
+Fb-email-sender-field: email
 
 ----
 

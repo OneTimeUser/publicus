@@ -23,7 +23,9 @@
                 <article class="menu__item-text info">
                     <div>
                         <p>
-                            <?= page('about')->address()->kirbytextinline() ?>
+                            <a class="menu__item-text-link" href="https://www.google.com/maps/place/PublicUs/@36.1657782,-115.132962,15z/data=!4m5!3m4!1s0x0:0x12f2b21c162e733c!8m2!3d36.1657782!4d-115.132962" target="_blank">
+                                <?= page('about')->address()->kirbytextinline() ?>
+                            </a>
                         </p>
                     </div>
                     <div>
@@ -60,23 +62,8 @@
             <div class="menu__item">
                 <a class="menu__item-link" title="Apply">Apply</a>
                 <article class="menu__item-text">
-                    <?php if (page('apply-positions')->text()->isNotEmpty()): ?>
-                    <p>
-                        <?= page('apply-positions')->text()->kirbytextinline(); ?>
-                    </p>
-                    <?php endif ?>
-                    <p>Positions available:</p>
-                    <?php 
-                    // using the `toStructure()` method, we create a structure collection
-                    $jobs = page('apply-positions')->jobs()->toStructure(); ?>
-                    <ul class="available-jobs">
-                        <?php foreach ($jobs as $job): ?>
-                        <li>
-                            <?= $job->job() ?>
-                        </li>
-                        <?php endforeach ?>
-                    </ul>
-                    <p><a class="menu__item-explore"> Apply here!</a>
+
+                    <p><a class="menu__item-explore"> APPLY HERE!</a>
                     </p>
                 </article>
 
@@ -84,7 +71,7 @@
             <div class="menu__item">
                 <a class="menu__item-link" title="Contact">Contact</a>
                 <article class="menu__item-text">
-                    <a class="menu__item-explore">Leave a message!</a>
+                    <a class="menu__item-explore">LEAVE A MESSAGE!</a>
                 </article>
 
             </div>
