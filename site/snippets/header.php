@@ -24,6 +24,7 @@ function debug_to_console($data) {
         <meta name="description" content="PublicUs (pub-li-cus) is a canteen-style, neighborhood restaurant and coffeebar located in the Fremont East District of Downtown Las Vegas" />
         <meta name="keywords" content="coffee, events, food, market, artisans, downtown, Las Vegas" />
         <meta name="author" content="PublicUs" />
+        
         <link rel="shortcut icon" href="favicon.ico">
         <?= css(['assets/css/index.css']) ?>
             <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -40,5 +41,6 @@ function debug_to_console($data) {
     </head>
 
     <body class="loading">
+        <noscript style="position:relative; z-index:9999;"><h4>For full functionality of this page it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a></h4></noscript>
 
             

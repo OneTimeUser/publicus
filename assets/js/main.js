@@ -863,8 +863,6 @@
                 //dynamic control of length of content to avoid the overflow problem
                 let thisHeight = document.querySelector('.content-' + (this.current + 1) + '> *').clientHeight;
 
-                console.log(thisHeight);
-
                 document.querySelector('.grid-wrap').style.height = thisHeight + 100 + 'px';
 
                 document.querySelector('.content-' + (this.current + 1)).style.opacity = '1.0';
@@ -881,7 +879,6 @@
                 //dynamic control of length of content to avoid the overflow problem
                 let thisHeight = document.querySelector('.content-' + (this.current) + '> *').clientHeight;
 
-                console.log(thisHeight);
 
                 document.querySelector('.grid-wrap').style.height = thisHeight + 100 + 'px';
 
@@ -893,7 +890,6 @@
                 //dynamic control of length of content to avoid the overflow problem
                 let thisHeight = document.querySelector('.content-' + (this.current + 1) + '> *').clientHeight;
 
-                console.log(thisHeight);
 
                 document.querySelector('.grid-wrap').style.height = thisHeight + 100 + 'px';
 
@@ -945,7 +941,6 @@
                 this.DOM.activeBg.style.opacity = "0";
                 //                document.querySelector('main').style.overflow = "hidden";
                 //            this.menuItems[this.current].DOM.content.style.opacity = '0';
-                console.log(this.current);
 
                 //check if its apply or contact so we can appropriately hide sections
                 if (this.current == 3) {
@@ -1151,8 +1146,8 @@
             let botEl = document.querySelector("html");
             botEl.style.setProperty('--inner-height', iosInnerHeight() - window.innerHeight + 20 + 'px');
 
-            console.log(window.innerHeight);
-            console.log(iosInnerHeight());
+//            console.log(window.innerHeight);
+//            console.log(iosInnerHeight());
         }
         document.body.classList.remove('loading');
 
