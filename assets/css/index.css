@@ -84,7 +84,7 @@ input {
 }
 
 label {
-    color: rgba(0, 0, 0, .6);
+    color: black;
 }
 
 .active-bg {
@@ -372,6 +372,14 @@ h2.titles {
 
 .content-3 {
     z-index: 9;
+}
+
+.content-1,
+.content-2,
+.content-3,
+.content-4 {
+    opacity: 0;
+    transition: opacity .5s;
 }
 
 #application-form,
