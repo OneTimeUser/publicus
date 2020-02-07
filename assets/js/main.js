@@ -32,7 +32,6 @@
 
 
 
-
     // Gets the mouse position
     const getMousePos = (e) => {
         let posx = 0;
@@ -425,6 +424,7 @@
             this.DOM.pagePreview = document.querySelector('.page--preview');
             //bg show
             this.DOM.activeBg = document.querySelector('.active-bg');
+
 
 
 
@@ -847,7 +847,8 @@
                 this.renderId = undefined;
             }
             this.DOM.activeBg.style.opacity = "1.0";
-            document.querySelector('main').style.overflow = "visible";
+            //            document.querySelector('main').style.overflow = "visible";  
+
 
             //            this.menuItems[this.current].DOM.content.style.opacity = '1.0';
             document.querySelector('.content-' + (this.current + 1)).style.display = 'block';
@@ -858,6 +859,14 @@
                 for (var i = 0; i < hiddenEls.length; i++) {
                     hiddenEls[i].classList.add('hide');
                 }
+
+                //dynamic control of length of content to avoid the overflow problem
+                let thisHeight = document.querySelector('.content-' + (this.current + 1) + '> *').clientHeight;
+
+                console.log(thisHeight);
+
+                document.querySelector('.grid-wrap').style.height = thisHeight + 100 + 'px';
+
                 document.querySelector('.content-' + (this.current + 1)).style.opacity = '1.0';
             } else if (this.current == 3) {
                 document.querySelector('.content-' + (this.current)).style.display = 'block';
@@ -869,8 +878,26 @@
                 document.querySelector(".full-form p").classList.add('hide');
                 document.querySelector(".full-form ul").classList.add('hide');
 
+                //dynamic control of length of content to avoid the overflow problem
+                let thisHeight = document.querySelector('.content-' + (this.current) + '> *').clientHeight;
+
+                console.log(thisHeight);
+
+                document.querySelector('.grid-wrap').style.height = thisHeight + 100 + 'px';
+
+
+
                 document.querySelector('.content-' + (this.current)).style.opacity = '1.0';
             } else {
+
+                //dynamic control of length of content to avoid the overflow problem
+                let thisHeight = document.querySelector('.content-' + (this.current + 1) + '> *').clientHeight;
+
+                console.log(thisHeight);
+
+                document.querySelector('.grid-wrap').style.height = thisHeight + 100 + 'px';
+
+
                 document.querySelector('.content-' + (this.current + 1)).style.opacity = '1.0';
             }
 
@@ -916,7 +943,7 @@
                 this.renderId = requestAnimationFrame(() => this.render());
 
                 this.DOM.activeBg.style.opacity = "0";
-                document.querySelector('main').style.overflow = "hidden";
+                //                document.querySelector('main').style.overflow = "hidden";
                 //            this.menuItems[this.current].DOM.content.style.opacity = '0';
                 console.log(this.current);
 
@@ -1063,6 +1090,13 @@
         for (var i = 0; i < newChildren.length; i++) {
             newChildren[i].style.display = "block";
         }
+
+        //update height of menu
+        let newHeight = document.querySelector('.menu__menu').clientHeight;
+
+
+
+        document.querySelector('.grid-wrap').style.height = newHeight + 100 + 'px';
 
         //        document.getElementById(`${menuItems}`).children.style.display = 'block';
     }
