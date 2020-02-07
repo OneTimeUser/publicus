@@ -335,6 +335,10 @@ a:focus {
     grid-row-start: 1;
     grid-column-end: -1;
 
+    height: 100vh;
+
+    background-color: white;
+
 }
 
 .menu__item-explore:hover,
@@ -384,7 +388,7 @@ h2.titles {
 
 #application-form,
 #contact-form {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(255, 255, 255, 1);
     /*    box-shadow: 0px 0px 8px rgb(255, 255, 255),
     0px 0px 8px rgb(255, 255, 255),
     0px 0px 8px rgb(255, 255, 255),
@@ -422,7 +426,7 @@ select#contact-sub {
 
 #application-form div,
 #contact-form div {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .messagebox {
@@ -440,8 +444,7 @@ select#contact-sub {
 }
 
 .half {
-    width: 50%;
-    float: left;
+    width: 100%;
 }
 
 .half input {
@@ -450,7 +453,7 @@ select#contact-sub {
 }
 
 .half:nth-child(odd) {
-    padding-right: 2%;
+    padding-right: 0;
 }
 
 .hide {
@@ -619,7 +622,7 @@ ul {
     grid-template-columns: 100%;
     grid-template-rows: 3rem 1fr;
     position: relative;
-    padding: 2.5rem 0 0 0;
+    padding: 1rem 0 0 0;
     /*1rem*/
     pointer-events: none;
 }
@@ -635,6 +638,10 @@ ul {
     color: #fff;
     opacity: 0;
     pointer-events: auto;
+}
+
+.gridback svg {
+    background-color: white;
 }
 
 .page--preview .gridback {
@@ -860,7 +867,11 @@ ul {
     .menu__item-content {
         grid-column-start: 2;
         grid-column-end: 10;
+        height: auto;
+        background-color: none;
     }
+
+
     .menu__item-text {
         /*        margin-left: 0.7rem;*/
         text-shadow: black 0px 0px 5px, black 0px 0px 8px, black 0px 0px 13px;
@@ -882,7 +893,7 @@ ul {
 
     .menu__menu {
         flex-flow: row wrap;
-        background-color: rgba(255, 255, 255, .9);
+        background-color: rgba(255, 255, 255, 1);
     }
 
     .menu__menu-cat {
@@ -918,6 +929,15 @@ ul {
 
     .available-jobs li {
         /*        font-size: 2.5rem;*/
+    }
+
+    .half {
+        width: 50%;
+        float: left;
+    }
+
+    .half:nth-child(odd) {
+        padding-right: 2%;
     }
 
     .grid-wrap {
