@@ -55,7 +55,7 @@
             <div class="menu__item">
                 <a class="menu__item-link" title="Menu">Menu</a>
                 <article class="menu__item-text">
-                    <a class="menu__item-explore">Explore</a>
+                    <a class="menu__item-explore">EXPLORE</a>
                 </article>
 
             </div>
