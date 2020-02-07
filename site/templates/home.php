@@ -12,7 +12,7 @@
 
     <?php snippet('header') ?>
 
-
+    <?php snippet('menu') ?>
 
     <div class="menu-wrap">
         <div class="menu-draggable"></div>

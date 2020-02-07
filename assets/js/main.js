@@ -1067,7 +1067,7 @@
         //        document.getElementById(`${menuItems}`).children.style.display = 'block';
     }
 
-    for (let cat of document.querySelectorAll('.menu__menu-cat > .titles')) {
+    for (let cat of document.querySelectorAll('.menu__menu-cat div:first-child > .titles')) {
         cat.addEventListener("click", e => menuSwitcher(cat), true);
     }
     /***********************************/
