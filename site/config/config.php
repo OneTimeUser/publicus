@@ -9,12 +9,12 @@
  */
 return [
     'debug' => true,
-    'email' => [
-        'transport' => [
-          'type' => 'smtp',
-          'host' => 'smtp.publicuslv.frb.io',
-          'port' => 465,
-          'security' => true
-        ]
-    ]
+//    'email' => [
+//        'transport' => [
+//          'type' => 'smtp',
+//          'host' => 'smtp.publicuslv.com',
+//          'port' => 465,
+//          'security' => true
+//        ]
+//    ]
 ];
