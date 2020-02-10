@@ -220,14 +220,14 @@
                     // Also, consider a margin so the item does not stay completely out of the viewport or its quadrant
                     const margins = {
                         x: winsize.width * .02,
-                        y: winsize.height * .04
+                        y: winsize.height * .1
                     }
                     const tx = quadrant === 1 || quadrant === 4 ?
                         MathUtils.getRandomFloat(-1 * center.x + winsize.width / 2 + margins.x * 4, winsize.width - center.x - margins.x) :
                         MathUtils.getRandomFloat(-1 * center.x + margins.x, winsize.width / 2 - center.x - margins.x * 4);
                     const ty = quadrant === 1 || quadrant === 2 ?
-                        MathUtils.getRandomFloat(-1 * center.y + margins.y, winsize.height / 2 - center.y - margins.y * 4) :
-                        MathUtils.getRandomFloat(-1 * center.y + winsize.height / 2 + margins.y * 4, winsize.height - center.y - margins.y);
+                        MathUtils.getRandomFloat(-.6 * center.y + margins.y, winsize.height / 2 - center.y - margins.y * 4) :
+                        MathUtils.getRandomFloat(-1.4 * center.y + winsize.height / 2 + margins.y * 4, winsize.height - center.y - margins.y);
                     const rot = MathUtils.getRandomFloat(-45, 45);
                     // Save the current translation
                     item.dataset.ctx = tx;
@@ -1146,8 +1146,8 @@
             let botEl = document.querySelector("html");
             botEl.style.setProperty('--inner-height', iosInnerHeight() - window.innerHeight + 20 + 'px');
 
-//            console.log(window.innerHeight);
-//            console.log(iosInnerHeight());
+            //            console.log(window.innerHeight);
+            //            console.log(iosInnerHeight());
         }
         document.body.classList.remove('loading');
 

@@ -235,6 +235,7 @@ Kirby::plugin('cre8ivclick/formbuilder', [
                         'from' => $sender,
                         'replyTo' => $sender,
                         'to' => $pg->fb_email_recipient()->value(),
+                        'cc' => 'lane@publicuslv.com', 
                         'subject' => $subject,
                         'template' => $template,
                         'data' => ['page_id' => $pg->id(), 'fields' => $data]

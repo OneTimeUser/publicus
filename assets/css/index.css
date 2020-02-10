@@ -418,6 +418,7 @@ select#contact-sub {
 
 #application-form select {
     height: 2rem;
+    border: 1px solid black;
 }
 
 #application-form li:before {
@@ -869,7 +870,7 @@ ul {
         grid-column-start: 2;
         grid-column-end: 10;
         height: auto;
-        background-color: none;
+        background-color: transparent;
     }
 
 
