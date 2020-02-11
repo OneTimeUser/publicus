@@ -217,10 +217,10 @@
 
                     // Now calculate how much to translate the item
                     // The positions will be random but only in the area of the item´s quadrant
-                    // Also, consider a margin so the item does not stay completely out of the viewport or its quadrant
+                    // Also, consider a margin so the item does not stay completely out of the viewport or its quadrant  //.02, .1
                     const margins = {
-                        x: winsize.width * .02,
-                        y: winsize.height * .1
+                        x: winsize.width * .01,
+                        y: winsize.height * .01
                     }
                     const tx = quadrant === 1 || quadrant === 4 ?
                         MathUtils.getRandomFloat(-1 * center.x + winsize.width / 2 + margins.x * 4, winsize.width - center.x - margins.x) :
@@ -233,10 +233,10 @@
                     item.dataset.ctx = tx;
                     item.dataset.cty = ty;
 
-                    let scaleVar = 0.55;
+                    let scaleVar = 0.7; //.55
 
                     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                        scaleVar = 0.9;
+                        scaleVar = 1.5;
 
                     }
 
