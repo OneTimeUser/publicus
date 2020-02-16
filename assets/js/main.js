@@ -95,6 +95,17 @@
         scroll();
     }
 
+    // Mobile adjust
+    function mobileHAdjust() {
+        if (window.innerWidth <= 1024) {
+            let botEl = document.querySelector("html");
+            botEl.style.setProperty('--inner-height', iosInnerHeight() - winsize.height + 20 + 'px');
+
+            //            console.log(window.innerHeight);
+            //            console.log(iosInnerHeight());
+        }
+    }
+
     // Calculate the viewport size
     let winsize;
     const calcWinsize = () => winsize = {
@@ -103,7 +114,9 @@
     };
     calcWinsize();
     window.addEventListener('resize', calcWinsize);
-    window.addEventListener('deviceorientation', calcWinsize);
+    window.addEventListener('resize', mobileHAdjust);
+
+
 
     // Track the mouse position
     let mousepos = {
@@ -813,7 +826,7 @@
 
             // Resize window: update menu position
             window.addEventListener('resize', () => this.resize());
-            window.addEventListener('deviceorientation', () => this.resize());
+
         }
         showBackCtrl() {
             return this.toggleBackCtrl('show');
@@ -1092,9 +1105,6 @@
 
         //update height of menu
         let newHeight = document.querySelector('.menu__menu').clientHeight;
-
-
-
         document.querySelector('.grid-wrap').style.height = newHeight + 100 + 'px';
 
         //        document.getElementById(`${menuItems}`).children.style.display = 'block';
@@ -1139,20 +1149,16 @@
     //     });
     // };
 
+
+
     Promise.all([
         preloadImages(),
         // preloadFonts()  
     ]).then(() => {
         // the Menu
         const menu = new Menu(document.querySelector('.menu-wrap'));
+        mobileHAdjust();
 
-        if (window.innerWidth <= 1024) {
-            let botEl = document.querySelector("html");
-            botEl.style.setProperty('--inner-height', iosInnerHeight() - window.innerHeight + 20 + 'px');
-
-            //            console.log(window.innerHeight);
-            //            console.log(iosInnerHeight());
-        }
         document.body.classList.remove('loading');
 
         //        const parentDOM = document.querySelector(".menu__menu-cat");
