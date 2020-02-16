@@ -103,6 +103,7 @@
     };
     calcWinsize();
     window.addEventListener('resize', calcWinsize);
+    window.addEventListener('deviceorientation', calcWinsize);
 
     // Track the mouse position
     let mousepos = {
@@ -330,6 +331,8 @@
             this.letters = [...this.DOM.link.querySelectorAll('.letter__inner')];
             // Need to recalculate size and position on window resize
             window.addEventListener('resize', () => this.rect = this.DOM.el.getBoundingClientRect());
+            adjustWidth();
+            window.addEventListener('deviceorientation', () => this.rect = this.DOM.el.getBoundingClientRect());
             adjustWidth();
         }
         setCurrent() {
@@ -810,6 +813,7 @@
 
             // Resize window: update menu position
             window.addEventListener('resize', () => this.resize());
+            window.addEventListener('deviceorientation', () => this.resize());
         }
         showBackCtrl() {
             return this.toggleBackCtrl('show');
