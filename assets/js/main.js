@@ -95,16 +95,7 @@
         scroll();
     }
 
-    // Mobile adjust
-    function mobileHAdjust() {
-        if (window.innerWidth <= 1024) {
-            let botEl = document.querySelector("html");
-            botEl.style.setProperty('--inner-height', iosInnerHeight() - winsize.height + 20 + 'px');
 
-            //            console.log(window.innerHeight);
-            //            console.log(iosInnerHeight());
-        }
-    }
 
     // Calculate the viewport size
     let winsize;
@@ -114,6 +105,17 @@
     };
     calcWinsize();
     window.addEventListener('resize', calcWinsize);
+
+    // Mobile adjust
+    function mobileHAdjust() {
+        if (window.innerWidth <= 1024) {
+            let botEl = document.querySelector("html");
+            botEl.style.setProperty('--inner-height', iosInnerHeight() - window.innerHeight + 20 + 'px');
+
+            //            console.log(window.innerHeight);
+            //            console.log(iosInnerHeight());
+        }
+    }
     window.addEventListener('resize', mobileHAdjust);
 
 
@@ -345,8 +347,7 @@
             // Need to recalculate size and position on window resize
             window.addEventListener('resize', () => this.rect = this.DOM.el.getBoundingClientRect());
             adjustWidth();
-            window.addEventListener('deviceorientation', () => this.rect = this.DOM.el.getBoundingClientRect());
-            adjustWidth();
+
         }
         setCurrent() {
             this.DOM.el.classList.add('menu__item--current');
